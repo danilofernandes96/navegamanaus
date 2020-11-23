@@ -1,0 +1,41 @@
+<div class="container">
+    <form action="/vessel" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nameShip">Nome</label>
+            <input type="text" class="form-control" id="nameShip" name="nameShip">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="destination">Destino</label>
+                <select id="destination" name="destination" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>Codajas</option>
+                    <option>Parintins</option>
+                    <option>Tefé</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="departure">Dia de saída</label>
+                <input type="text" class="form-control" id="departure" name="departure">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="capacity">Capacidade</label>
+                <input type="text" class="form-control" id="capacity" name="capacity">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="price">Preço</label>
+                <input type="text" class="form-control" id="price" name="price">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="price">Imagem</label>
+                <input type="file" id="img" name="img">
+            </div>
+
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
